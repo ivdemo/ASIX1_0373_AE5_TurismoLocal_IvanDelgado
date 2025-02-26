@@ -1,3 +1,10 @@
+.montserrat-texto {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
