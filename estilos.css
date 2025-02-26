@@ -1,0 +1,134 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(234, 209, 170);
+}
+
+.columnaLateral {
+    width: 25%;
+    max-height: 800px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.columnaCentro {
+    width: 50%;
+    max-height: 800px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.espacioColumnas {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.banner {
+    background-image: url(./img/pinedaDeMar.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.espacioGaleria {
+    display: flex;
+    justify-content: center;
+}
+
+.galeria, .noticia {
+    width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria:hover, .noticia:hover {
+    transform: scale(1.05);
+}
+
+.columnas2 {
+    width: 50%;
+}
+
+.noticia {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.espacioTitulo {
+    margin-top: 0%;
+    text-align: justify;
+}
+
+.espacioNoticia {
+    margin-top: -3%;
+    text-align: justify;
+}
+
+.espacioGaleria {
+    margin-bottom: 3%;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.block {
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .columnaLateral,
+    .columnaCentro {
+        width: 100%;
+        max-height: none;
+    }
+
+    .espacioGaleria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galeria {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .columnas2 {
+        width: 100%;
+    }
+
+    .banner {
+        background-image: url(./img/pinedaDeMar.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+}
